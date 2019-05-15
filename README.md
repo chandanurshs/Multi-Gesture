@@ -1,11 +1,11 @@
 # Multi-Gestures
-Multi-Gestures is a swift file which helps you add multiple gestures to the same UIView and use them simultaneously.
+Multi-Gestures is a swift file which helps you add multiple gestures to the UIView and use them simultaneously.
 
 ## Requirements
 
 iOS 9.0 and later.
 Xcode 9.0 and later.
-Swift 4.1.
+Swift 4.
 
 ## Features
 
@@ -25,11 +25,15 @@ Then use it like below:
 
 class viewController: UIViewController {
 
-	var trackpad: Trackpad?
+    var trackpad: Trackpad?
     @IBOutlet weak var trackpadView: UIView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
 	trackpad = Trackpad(trackpad: trackpadView, trackpadGestureDelegate: self)
+    }
 	
-	###
+    ###
 }
 extension ViewController: GestureDelegates{
     func gesture(gestureType: gestureType, noOfTouches: Int?, noOfTaps: Int?, coOrdinates: CGPoint?, transCoOrdinates: CGPoint?, scale: CGFloat?, panVelocity: CGPoint?, pinchVelocity: CGFloat?) {
