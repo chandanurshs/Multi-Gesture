@@ -17,9 +17,9 @@ Swift 4.1.
 
 ## Usage
 
-Add the file to your project.
+Add the files to your project.
 
-Use it like below:
+Then use it like below:
 
 ```swift
 
