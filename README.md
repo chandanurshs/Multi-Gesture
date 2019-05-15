@@ -57,5 +57,6 @@ extension ViewController: GestureDelegates{
         case .forceTouchGesture:
             print("Force Touch")
         }
-	}
+    }
+}
 ```
