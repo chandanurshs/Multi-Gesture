@@ -3,9 +3,9 @@ Multi-Gestures is a swift file which helps you add multiple gestures to the UIVi
 
 ## Requirements
 
-iOS 9.0 and later.
-Xcode 9.0 and later.
-Swift 4.
+* iOS 9.0 and later.
+* Xcode 9.0 and later.
+* Swift 4.
 
 ## Features
 
