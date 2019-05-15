@@ -45,7 +45,6 @@ final class ForceTouchGestureRecognizer: UIGestureRecognizer {
         let impact = UIImpactFeedbackGenerator()
         if touch.force / touch.maximumPossibleForce >= threshold {
             state = UIGestureRecognizer.State.recognized
-            //AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
             let model = UIDevice.modelName
             //print(model)
             if model == "iPhone 6s" || model == "iPhone 6s Plus"{
